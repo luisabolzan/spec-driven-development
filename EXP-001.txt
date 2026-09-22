@@ -1,0 +1,16 @@
+Experiment ID: EXP-001
+Name: Qwen3 3B - MBPP
+Date: 2026-09-22
+Model: Qwen3 3B
+Dataset: MBPP
+Configuration: Q4_K
+Observations: Experimento inicial com geração de código Python usando harness de raciocínio.
+Hardware:
+- CPU: Intel Core i7-14700KF
+- GPU: NVIDIA RTX 4070 12GB
+- RAM: 94
+Reasoning harness used: yes
+Metrics:
+- pass@1: 0.88
+- execution_time_seconds: 15.5
+- energy_consumption_wh: unavailable
