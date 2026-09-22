@@ -8,6 +8,16 @@
 
 ## Local validation scenarios
 
+### Launch the graphical application
+
+From the repository root, run:
+
+```powershell
+.\.venv\Scripts\python.exe -m src.app.main
+```
+
+The application opens a local Tkinter window and stores records in `experiments.json`.
+
 ### 1. Create and save a valid experiment
 1. Launch the application.
 2. Select the option to create a new experiment.

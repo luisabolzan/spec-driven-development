@@ -10,9 +10,9 @@
 
 **Purpose**: Project initialization and basic structure for the local desktop application.
 
-- [ ] T001 Create the project directory structure for application code and tests in src/app/, src/utils/, tests/unit/, tests/integration/, and tests/fixtures/
-- [ ] T002 Initialize the Python project configuration and dependencies for a desktop app in pyproject.toml or requirements.txt
-- [ ] T003 [P] Configure linting and formatting defaults for Python code in pyproject.toml and editor tooling files
+- [x] T001 Create the project directory structure for application code and tests in src/app/, src/utils/, tests/unit/, tests/integration/, and tests/fixtures/
+- [x] T002 Initialize the Python project configuration and dependencies for a desktop app in pyproject.toml or requirements.txt
+- [x] T003 [P] Configure linting and formatting defaults for Python code in pyproject.toml and editor tooling files
 
 ---
 
@@ -22,10 +22,10 @@
 
 **Checkpoint**: The registry model, storage layer, validation rules, and app shell are ready before user story work begins.
 
-- [ ] T004 Define the Experiment, HardwareProfile, and MetricSet data structures in src/app/models.py to match the documented data model
-- [ ] T005 [P] Implement validation rules for required fields, uniqueness, and optional metrics in src/app/validation.py, including the rule that id MUST be unique and required values MUST be present before save
-- [ ] T006 [P] Implement a local JSON-backed storage layer in src/app/storage.py to create, read, update, delete, and list experiments
-- [ ] T007 Create the desktop application shell and navigation state in src/app/main.py so the app can open create, list, detail, and edit views
+- [x] T004 Define the Experiment, HardwareProfile, and MetricSet data structures in src/app/models.py to match the documented data model
+- [x] T005 [P] Implement validation rules for required fields, uniqueness, and optional metrics in src/app/validation.py, including the rule that id MUST be unique and required values MUST be present before save
+- [x] T006 [P] Implement a local JSON-backed storage layer in src/app/storage.py to create, read, update, delete, and list experiments
+- [x] T007 Create the desktop application shell and navigation state in src/app/main.py so the app can open create, list, detail, and edit views
 
 ---
 
@@ -37,11 +37,11 @@
 
 ### Implementation for User Story 1
 
-- [ ] T008 [P] [US1] Add the experiment creation form and required field handling in src/app/ui/experiment_form.py
-- [ ] T009 [US1] Implement the experiment list view in src/app/ui/experiment_list.py so all registered experiments are displayed
-- [ ] T010 [US1] Connect the create flow to storage, validation, and list updates in src/app/main.py and src/app/storage.py
-- [ ] T011 [US1] Add validation messaging for missing or invalid required fields in src/app/validation.py and src/app/ui/experiment_form.py
-- [ ] T012 [P] [US1] Implement the detail view and selection behavior for a single experiment in src/app/ui/detail_view.py
+- [x] T008 [P] [US1] Add the experiment creation form and required field handling in src/app/ui/experiment_form.py
+- [x] T009 [US1] Implement the experiment list view in src/app/ui/experiment_list.py so all registered experiments are displayed
+- [x] T010 [US1] Connect the create flow to storage, validation, and list updates in src/app/main.py and src/app/storage.py
+- [x] T011 [US1] Add validation messaging for missing or invalid required fields in src/app/validation.py and src/app/ui/experiment_form.py
+- [x] T012 [P] [US1] Implement the detail view and selection behavior for a single experiment in src/app/ui/detail_view.py
 
 **Checkpoint**: At this point, User Story 1 is fully functional and testable independently.
 
@@ -55,10 +55,10 @@
 
 ### Implementation for User Story 2
 
-- [ ] T013 [P] [US2] Add edit-mode behavior and pre-populated form values in src/app/ui/experiment_form.py
-- [ ] T014 [US2] Implement save/update logic for existing experiments in src/app/storage.py and src/app/main.py
-- [ ] T015 [US2] Implement delete workflow and confirmation handling in src/app/ui/detail_view.py and src/app/main.py
-- [ ] T016 [US2] Ensure unmeasured optional metrics remain blank instead of forcing a placeholder value in src/app/models.py and src/app/validation.py
+- [x] T013 [P] [US2] Add edit-mode behavior and pre-populated form values in src/app/ui/experiment_form.py
+- [x] T014 [US2] Implement save/update logic for existing experiments in src/app/storage.py and src/app/main.py
+- [x] T015 [US2] Implement delete workflow and confirmation handling in src/app/ui/detail_view.py and src/app/main.py
+- [x] T016 [US2] Ensure unmeasured optional metrics remain blank instead of forcing a placeholder value in src/app/models.py and src/app/validation.py
 
 **Checkpoint**: At this point, the registry supports full lifecycle management for experiments.
 
@@ -72,10 +72,10 @@
 
 ### Implementation for User Story 3
 
-- [ ] T017 [P] [US3] Implement JSON import parsing and schema validation in src/utils/json_import.py and src/app/storage.py, using the contract defined in contracts/experiment-import.schema.json
-- [ ] T018 [US3] Add import workflow actions and user feedback in src/app/main.py and src/app/ui/experiment_list.py
-- [ ] T019 [US3] Create the human-readable TXT report generator in src/app/report.py using the documented fields for id, name, date, model, dataset, configuration, hardware, reasoning_harness, observations, and recorded metrics
-- [ ] T020 [US3] Add report export action and file output handling in src/app/main.py and src/app/ui/detail_view.py
+- [x] T017 [P] [US3] Implement JSON import parsing and schema validation in src/utils/json_import.py and src/app/storage.py, using the contract defined in contracts/experiment-import.schema.json
+- [x] T018 [US3] Add import workflow actions and user feedback in src/app/main.py and src/app/ui/experiment_list.py
+- [x] T019 [US3] Create the human-readable TXT report generator in src/app/report.py using the documented fields for id, name, date, model, dataset, configuration, hardware, reasoning_harness, observations, and recorded metrics
+- [x] T020 [US3] Add report export action and file output handling in src/app/main.py and src/app/ui/detail_view.py
 
 **Checkpoint**: At this point, the workflow supports import and reporting as independent research activities.
 
@@ -85,9 +85,10 @@
 
 **Purpose**: Final hardening across all stories.
 
-- [ ] T021 [P] Review validation messages and ensure required-field errors are clear and consistent across form and import workflows in src/app/validation.py and src/app/ui/experiment_form.py
-- [ ] T022 [P] Run the regression checks for experiment creation, editing, deletion, import, and report generation using the scenarios in quickstart.md
-- [ ] T023 Document the local research workflow and final usage notes in docs/ or the project README for future maintainers
+- [x] T021 [P] Review validation messages and ensure required-field errors are clear and consistent across form and import workflows in src/app/validation.py and src/app/ui/experiment_form.py
+- [x] T022 [P] Run the regression checks for experiment creation, editing, deletion, import, and report generation using the scenarios in quickstart.md
+- [x] T023 Document the local research workflow and final usage notes in docs/ or the project README for future maintainers
+- [x] T024 Add the local Tkinter graphical interface and runnable `python -m src.app.main` entry point for the required create, list, view, edit, delete, import, report, and validation workflows
 
 ---
 

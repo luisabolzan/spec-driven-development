@@ -1,0 +1,24 @@
+{
+  "experiments": [
+    {
+      "id": "EXP-002",
+      "name": "Qwen3 3B - MBPP",
+      "date": "2026-09-22",
+      "model": "Qwen3 3B",
+      "dataset": "MBPP",
+      "configuration": "Q4_K",
+      "observations": "Experimento inicial com gera\u00e7\u00e3o de c\u00f3digo Python usando harness de racioc\u00ednio.",
+      "hardware": {
+        "cpu": "Intel Core i7-14700KF",
+        "gpu": "NVIDIA RTX 3050 12GB",
+        "ram": "94"
+      },
+      "reasoning_harness": true,
+      "metrics": {
+        "pass_at_1": 0.88,
+        "execution_time_seconds": 18.5,
+        "energy_consumption_wh": null
+      }
+    }
+  ]
+}

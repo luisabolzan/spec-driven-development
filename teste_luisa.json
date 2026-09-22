@@ -1,0 +1,25 @@
+{
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "name": "Qwen3 3B - MBPP",
+      "date": "2026-09-22",
+      "model": "Qwen3 3B",
+      "dataset": "MBPP",
+      "quantization": "Q4_K",
+      "configuration": "Q4_K",
+      "hardware": {
+        "cpu": "Intel Core i7-14700KF",
+        "gpu": "NVIDIA RTX 4070 12GB",
+        "ram": 94
+      },
+      "reasoning_harness": true,
+      "metrics": {
+        "pass_at_1": 0.88,
+        "execution_time_seconds": 15.5,
+        "energy_wh": 3.7
+      },
+      "observations": "Experimento inicial com geração de código Python usando harness de raciocínio."
+    }
+  ]
+}

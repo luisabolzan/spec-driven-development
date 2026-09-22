@@ -1,0 +1,24 @@
+{
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "name": "SMALL-MODEL-BASELINE",
+      "date": "2026-09-22",
+      "model": "Qwen2.5-7B-Instruct",
+      "dataset": "HumanEval+Python",
+      "configuration": "4-bit quantized, fp16 generation",
+      "observations": "Baseline reasoning behavior was stable but slower than expected.",
+      "hardware": {
+        "cpu": "Intel i7-12700K",
+        "gpu": "NVIDIA RTX 4070",
+        "ram": "32 GB"
+      },
+      "reasoning_harness": true,
+      "metrics": {
+        "pass_at_1": 0.78,
+        "execution_time_seconds": 182.5,
+        "energy_consumption_wh": 19.2
+      }
+    }
+  ]
+}
