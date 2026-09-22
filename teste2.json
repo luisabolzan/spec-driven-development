@@ -1,7 +1,7 @@
 {
   "experiments": [
     {
-      "id": "EXP-002",
+      "id": "EXP-003",
       "name": "Qwen3 8B - MBPP",
       "date": "2026-09-22",
       "model": "Qwen3 8B",

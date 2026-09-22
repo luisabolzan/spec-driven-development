@@ -96,7 +96,6 @@ class ExperimentTrackerWindow:
         list_actions.grid(row=1, column=0, columnspan=2, sticky="ew")
         ttk.Button(list_actions, text="New", command=self.new_experiment).pack(fill=tk.X)
         ttk.Button(list_actions, text="Import JSON", command=self.import_json).pack(fill=tk.X, pady=(6, 0))
-        ttk.Button(list_actions, text="Refresh", command=self.refresh_list).pack(fill=tk.X, pady=(6, 0))
 
         form_frame = ttk.LabelFrame(main, text="Experiment details", padding=12)
         form_frame.grid(row=0, column=1, sticky="nsew")
