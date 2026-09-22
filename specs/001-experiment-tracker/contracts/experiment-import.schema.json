@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experiment Tracker Import Contract",
+  "type": "object",
+  "required": ["experiments"],
+  "properties": {
+    "experiments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/experiment"
+      }
+    }
+  },
+  "$defs": {
+    "experiment": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "date",
+        "model",
+        "dataset",
+        "configuration",
+        "observations",
+        "hardware",
+        "reasoning_harness"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "date": { "type": "string", "format": "date" },
+        "model": { "type": "string", "minLength": 1 },
+        "dataset": { "type": "string", "minLength": 1 },
+        "configuration": { "type": "string", "minLength": 1 },
+        "observations": { "type": "string", "minLength": 1 },
+        "reasoning_harness": { "type": "boolean" },
+        "hardware": {
+          "type": "object",
+          "required": ["cpu", "gpu", "ram"],
+          "properties": {
+            "cpu": { "type": "string", "minLength": 1 },
+            "gpu": { "type": "string", "minLength": 1 },
+            "ram": { "type": "string", "minLength": 1 }
+          }
+        },
+        "metrics": {
+          "type": "object",
+          "properties": {
+            "pass_at_1": { "type": ["number", "null"] },
+            "execution_time_seconds": { "type": ["number", "null"] },
+            "energy_consumption_wh": { "type": ["number", "null"] }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
