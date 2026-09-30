@@ -1,0 +1,36 @@
+{
+  "experiments": [
+    {
+      "id": "6376fb92-b0b5-4802-a32f-0473ab6d3c2d",
+      "name": "001",
+      "date": "2026-09-29",
+      "model": "Llama 3B",
+      "dataset": "MBPP",
+      "quantization_config": null,
+      "hardware_cpu": null,
+      "hardware_gpu": null,
+      "hardware_ram": null,
+      "reasoning_harness_used": null,
+      "notes": null,
+      "pass_at_1": null,
+      "execution_time": null,
+      "energy_consumption": null
+    },
+    {
+      "id": "EXP-001",
+      "name": "Qwen3 3B - MBPP",
+      "date": "2026-09-22",
+      "model": "Qwen3 3B",
+      "dataset": "MBPP",
+      "quantization_config": null,
+      "hardware_cpu": null,
+      "hardware_gpu": null,
+      "hardware_ram": null,
+      "reasoning_harness_used": null,
+      "notes": null,
+      "pass_at_1": null,
+      "execution_time": null,
+      "energy_consumption": null
+    }
+  ]
+}

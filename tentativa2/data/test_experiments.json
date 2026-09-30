@@ -1,0 +1,20 @@
+{
+  "experiments": [
+    {
+      "id": "exp-10",
+      "name": "Round Trip",
+      "date": "2026-01-02",
+      "model": "model-x",
+      "dataset": null,
+      "quantization_config": null,
+      "hardware_cpu": null,
+      "hardware_gpu": null,
+      "hardware_ram": null,
+      "reasoning_harness_used": null,
+      "notes": null,
+      "pass_at_1": null,
+      "execution_time": null,
+      "energy_consumption": null
+    }
+  ]
+}
